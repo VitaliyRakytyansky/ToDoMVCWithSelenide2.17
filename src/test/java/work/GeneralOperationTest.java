@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import pages.TodoMVCPage;
 
 
-public class GeneralOperationTest extends BaseTest {
+public class GeneralOperationTest extends BaseTest{
 
     TodoMVCPage page = new TodoMVCPage();
 

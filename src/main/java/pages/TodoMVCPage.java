@@ -9,10 +9,11 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.refresh;
 import static com.codeborne.selenide.WebDriverRunner.url;
 
+
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+
 
 public class TodoMVCPage {
 
@@ -29,7 +30,7 @@ public class TodoMVCPage {
     }
 
     public SelenideElement startEdit(String oldTaskText, String newTaskText) {
-        tasks.findBy(exactText(oldTaskText)).doubleClick();
+        actions().doubleClick(tasks.find(exactText(oldTaskText)).find("label")).perform();
         return tasks.findBy(cssClass("editing")).$(".edit").setValue(newTaskText);
     }
 

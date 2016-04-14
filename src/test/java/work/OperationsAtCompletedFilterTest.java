@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static pages.TodoMVCPage.TaskType.ACTIVE;
 import static pages.TodoMVCPage.TaskType.COMPLETED;
 
-public class OperationsAtCompletedFilterTest extends BaseTest {
+public class OperationsAtCompletedFilterTest extends BaseTest{
 
     TodoMVCPage page = new TodoMVCPage();
 

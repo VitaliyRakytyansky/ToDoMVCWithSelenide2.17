@@ -11,7 +11,7 @@ import static pages.TodoMVCPage.TaskType.COMPLETED;
 
 
 
-public class OperationsAtActiveFilterTest extends BaseTest {
+public class OperationsAtActiveFilterTest  {
 
     TodoMVCPage page = new TodoMVCPage();
 

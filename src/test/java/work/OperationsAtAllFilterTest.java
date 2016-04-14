@@ -10,7 +10,7 @@ import static pages.TodoMVCPage.TaskType.ACTIVE;
 import static pages.TodoMVCPage.TaskType.COMPLETED;
 
 
-public class OperationsAtAllFilterTest extends BaseTest {
+public class OperationsAtAllFilterTest  {
 
     TodoMVCPage page = new TodoMVCPage();
 

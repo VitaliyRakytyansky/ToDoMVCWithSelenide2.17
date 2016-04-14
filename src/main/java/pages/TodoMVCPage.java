@@ -26,7 +26,8 @@ public class TodoMVCPage {
     }
 
     public void delete(String taskText) {
-        tasks.find(exactText(taskText)).hover().$(".destroy").click();
+        tasks.find(exactText(taskText)).hover();
+        tasks.find(exactText(taskText)).$(".destroy").click();
     }
 
     public SelenideElement startEdit(String oldTaskText, String newTaskText) {

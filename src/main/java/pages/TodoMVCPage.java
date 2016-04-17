@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.refresh;
 import static com.codeborne.selenide.WebDriverRunner.url;
+import static helpers.Helpers.doubleClick;
 
 
 import com.codeborne.selenide.ElementsCollection;
@@ -31,7 +32,7 @@ public class TodoMVCPage {
     }
 
     public SelenideElement startEdit(String oldTaskText, String newTaskText) {
-        actions().doubleClick(tasks.find(exactText(oldTaskText)).find("label")).perform();
+        doubleClick((tasks.find(exactText(oldTaskText)).find("label")));
         return tasks.findBy(cssClass("editing")).$(".edit").setValue(newTaskText);
     }
 
